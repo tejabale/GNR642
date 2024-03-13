@@ -1,0 +1,111 @@
+Iceberg Detection Using SAR Data
+Antarctica
+Bale Teja Rama Chandra Murthy, 200050020
+Hemendra Meena, 200050052
+
+Acknowledgements
+We express our gratitude to Prof. Gulab Singh for providing us with the opportunity to undertake this project as part of the GNR642 course on Scattering Models in Microwave Remote Sensing.
+We would also like to extend our appreciation to Teaching Assistants for their constant support and guidance throughout the project.
+
+Introduction
+We focus on the on several areas near the Antarctica, namely Rose sea, Drake passage, Bellingshausen sea and Ross Island.
+We also used the of Sentinel-1 data for Iceberg A-74 of time between May, 2021 to September, 2021 to analyze its movement.
+Based on Sentinel-1 data, we analyze the iceberg present by means of pixel-wise classification.
+We used unsupervised classification approach (K-means clustering) to identify icebergs.
+
+Icebergs
+
+What are Icebergs?
+Icebergs are floating mass of freshwater ice that has broken from the seaward end of either a glacier or an ice shelf.
+Icebergs are found in the oceans surrounding Antarctica, in the seas of the Arctic and subarctic, in Arctic fjords, and in lakes fed by glaciers.
+Iceberg considerably vary in shape and size.
+The largest iceberg in recent history, named B-15, which was calved from Ross Ice shelf in Antarctica and was measured at around 12000 Km square area in 2000.
+
+Literature Review
+
+Importance of our project
+Climate change : Understanding how icebergs form and drift can help researchers better predict how climate change will affect the polar regions, including the melting of ice caps and the rising sea levels.
+Ecosystems : Icebergs carry nutrients and freshwater, which can have a significant impact on marine ecosystems. By studying how icebergs form and drift, scientists can better understand how these nutrients are distributed and how they affect marine life.
+Navigation Safety : Icebergs can pose a significant threat to ships, especially in areas like the polar regions, where they are more prevalent. By analyzing the formation and drifting patterns of icebergs, shipping companies and mariners can plan their routes and take precautions to avoid potential collisions.
+
+Research Gap 
+Current methods for Iceberg detection often rely on manual observation, which is time-consuming and may not cover vast polar regions comprehensively. There is a need to develop automated detection methods using advanced technologies like satellite imagery, radar systems, and machine learning algorithms. 
+
+Objective
+Enhance Detection Efficiency: Develop algorithms to improve the accuracy and speed of iceberg identification.
+Analyze Iceberg Movements: Study the patterns and trajectories of icebergs to understand their movements in different oceanic conditions.
+Facilitate Data: Through this project the generated Iceberg detection images can help researchers in Iceberg movement history
+
+Methodology - Overview
+Image segmentation is a powerful technique used to separate an image into distinct regions or objects. In the context of analyzing the formation of icebergs, image segmentation can be utilized to delineate different parts of an iceberg, such as the top, bottom, and edges.
+This information can then be used to calculate important physical parameters of the iceberg, such as its volume and surface area, which are crucial for understanding its behavior in the surrounding environment.
+
+Methodology - Overview
+Additionally, image segmentation can be used to detect features such as cracks and fissures in the ice, which can provide insight into the mechanisms behind iceberg formation and breakup.
+
+Methodology - Steps
+To perform unsupervised classification of the SAR data of Sentinel-1, the following 2 steps are involved:
+Preprocessing - We used SNAP on Sentinel - 1 Data for preprocessing
+K Means Clustering - The final iceberg classification is done using the K Means Algorithm.
+
+Methodology - Preprocessing by SNAP
+Apply Orbit File - Incorporate precise satellite orbit information, ensuring precise georeferencing for data.
+Radiometric Calibration - Conversion to calibrated radar backscatter values
+TOPSAR-Deburst - Ensures coherent combination of radar bursts in TOPSAR mode, minimizing phase inconsistencies and enhancing data quality
+Single Speckle Filter - Reduce speckle noise and enhances data quality
+Range-Doppler Terrain Correction - Corrects distortions caused by varied topography and enhances quantitative analysis reliability
+
+Methodology - K-Means Clustering
+K-Means clustering is a simple and effective unsupervised machine learning algorithm used for grouping similar data points together. The algorithm separates data into 'k' number of clusters based on their similarities.
+K-Means is widely used in various applications, such as image segmentation, image compression, and anomaly detection, to find patterns or groupings within data without any prior information about the groups.
+It is computationally efficient and works well for large datasets, making it a popular choice for clustering applications in various fields, including data analysis, image segmentation, etc.
+
+Methodology - K-Means Clustering
+In this diagram we have shown how cluster centre updates at each iteration and finally changes the to optimal value.
+Number of cluster is a hyperparameter.
+The above algorithm can be used to cluster points into categories like ice, water etc. once we know the centre of the features of the clusters.
+
+Results (Rose Island, Antarctica)
+16 December, 2022
+
+Results (Rose Sea, Antarctica)
+16 December, 2022
+
+Results (Drake Passage, Antarctica)
+02 February, 2016
+
+Results (Bellingshausen Sea, Antarctica)
+    30 April, 2022
+
+Iceberg A-74
+Iceberg A-74 is an iceberg that calved from the north side of the Antarctic Brunt Ice Shelf in February 2021.
+The iceberg measured 1,270 square kilometres (490 sq mi) soon after calving.
+We analysed its movement using data of 4 months starting from May 2021 to September 2021.
+
+Results (Iceberg A-74)
+
+Result (Iceberg A-74)
+
+Result (Iceberg A-74)
+Path traced by Iceberg
+
+Further discussion
+Iceberg calving: The process of chunks of ice breaking off from the tip of a glacier or ice sheet is known as iceberg calving. The causes of iceberg calving, such as ocean temperature and glacial melt rates, could be further studied.
+Iceberg trajectory forecasting: Iceberg movement forecasting is essential for offshore buildings and shipping. The use of machine learning and other cutting-edge modelling methods to accurately predict iceberg trajectories could be explored in further study.
+Economic effects: The shipping and offshore sectors may be significantly impacted by icebergs that are drifting. The possible economic costs and benefits of various mitigation strategies for iceberg-related incidents could be examined in more detail.
+
+Conclusion
+The analysis of the detection and drifting of icebergs using machine learning algorithms has shown promising results in predicting the trajectory of these floating hazards.
+This has practical implications for shipping and offshore operations, as well as for understanding and mitigating the impact of climate change on polar regions.
+In the future, this technology could be further developed to improve predictions and forecasting of iceberg movements, potentially reducing risks and improving safety in these regions.
+
+Sources
+SNAP and Sentinel Toolboxes
+ASF Data Search (alaska.edu)
+
+
+THANKS FOR ATTENDING!
+
+Appendix (Images)
+
+Appendix (Images)
